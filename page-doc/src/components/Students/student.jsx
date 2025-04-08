@@ -5,6 +5,7 @@ import ShirtGrid from "../ShirtGrid.jsx/ShirtGrid.jsx";
 import RecognitionSection from "../RecognitionSection/RecognitionSection.jsx";
 import EmailModel from "../EmailModel/EmailModel";
 import ImportantSection from "../ImportantSection/ImportantSection.jsx";
+import AvisosSection from "../AvisosSection/AvisosSection.jsx";
 
 const Student = () => {
   return (
@@ -27,6 +28,7 @@ const Student = () => {
 
       <div className="h-15"></div>
       <ImportantSection/>
+      <AvisosSection/>
     </div>
   );
 };

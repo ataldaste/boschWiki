@@ -20,14 +20,14 @@ const ProductCard = ({ imageFront, label, backText }) => {
           <img
             src={imageFront}
             alt={`${label} frente`}
-            className="w-full h-auto object-cover rounded-lg"
+            className="w-full h-auto object-cover"
           />
           <span className="mt-2 font-semibold">{label}</span>
         </div>
 
         {/* Verso com texto */}
-        <div className={`absolute w-full h-full bg-gray-500 text-white flex flex-col items-center justify-center shadow-lg p-4 transition-all duration-500 ${isFlipped ? "opacity-100 rotate-y-180" : "opacity-0"}`}>
-          <span className="text-lg font-bold">{label} - Verso</span>
+        <div className={`absolute w-full h-full bg-[#00884A] text-white flex flex-col items-center justify-center shadow-lg p-4 transition-all duration-500 ${isFlipped ? "opacity-100 rotate-y-180" : "opacity-0"}`}>
+          <span className="text-lg font-bold">{label} - Significado</span>
           <p className="text-lg mt-2 text-center">{backText}</p>
         </div>
       </div>

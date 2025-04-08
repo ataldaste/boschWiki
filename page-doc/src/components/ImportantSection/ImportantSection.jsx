@@ -13,14 +13,14 @@ const items = [
     title: "5’S",
     icon: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/layers.svg",
     description: "Metodologia de organização japonesa.",
-    image: "/images/5s.png",
-    link: "https://exemplo.com/5s",
+    image: "src/components/media/5s.png",
+    link: "https://hackaton-rose.vercel.app/",
   },
   {
     title: "Mentoria",
     icon: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/people.svg",
     description: "Programa de mentoria para desenvolvimento profissional.",
-    image: "/images/mentor.png",
+    image: "src/components/media/LogoMentoria.png",
     link: "https://exemplo.com/mentoria",
   },
   {
@@ -28,7 +28,7 @@ const items = [
     icon: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/heart.svg",
     description: "O ALMA é um informativo para colaboradores Bosch acerca dos programas de saúde mental oferecidos pela empresa.",
     image: "src/components/media/alma.png",
-    link: "https://exemplo.com/alma",
+    link: "https://alma-zeta.vercel.app/",
   },
   {
     title: "Crachás",
@@ -39,14 +39,14 @@ const items = [
   {
     title: "Refeitório",
     icon: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/cup-hot.svg",
-    description: "Informações sobre refeições e horários.",
-    image: "/images/coffee.png",
+    description: "Contamos com 4 opções de cardápio: Moda da Casa, De Bem com a Vida, Receita do Chef e Grill. O valor por refeição é de R$2,58 (exceto o Grill, que adiciona R$16,00 ao valor). Os cardápios são variados, atualizados todas as segundas-feiras e podem ser consultados em frente ao restaurante. Também estão disponíveis no site BEA, porém este não é acessível aos aprendizes.",
+    image: "src/components/media/refeitorio.png",
   },
   {
     title: "Padrinhos",
     icon: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/person-heart.svg",
     description: "Alunos veteranos de apoio aos novatos.",
-    image: "/images/padrinhos.png",
+    image: "src/components/media/padrinho.png",
   },
   {
     title: "Calendário",
@@ -59,15 +59,15 @@ const items = [
     title: "Docupedia",
     icon: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/file-earmark-text.svg",
     description: "Repositório de documentos e materiais de referência.",
-    image: "/images/docupedia.png",
-    link: "https://exemplo.com/docupedia",
+    image: "src/components/media/docupedia.png",
+    link: "https://inside-docupedia.bosch.com/",
   },
   {
     title: "Design System",
     icon: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/palette.svg",
-    description: "Guia de componentes e padrões de design da aplicação.",
-    image: "/images/designsystem.png",
-    link: "https://exemplo.com/design-system",
+    description: "O Bosch Digital Design System (BDDS ou simplesmente DDS) fornece a base para todos os pontos de contato digitais, utilizando o kit de interface Bosch (UI kit) como suporte principal.",
+    image: "src/components/media/designsystem.png",
+    link: "https://brandguide.bosch.com/hub/53/en",
   },
 ];
 
