@@ -6,6 +6,7 @@ import RecognitionSection from "../RecognitionSection/RecognitionSection.jsx";
 import EmailModel from "../EmailModel/EmailModel";
 import ImportantSection from "../ImportantSection/ImportantSection.jsx";
 import AvisosSection from "../AvisosSection/AvisosSection.jsx";
+import AreaColors from "../AreaColors/AreaColors.jsx";
 
 const Student = () => {
   return (
@@ -25,6 +26,9 @@ const Student = () => {
 
       <div className="h-15"></div>
       <EmailModel />
+      
+      <div className="h-15"></div>
+      <AreaColors />
 
       <div className="h-15"></div>
       <ImportantSection/>
