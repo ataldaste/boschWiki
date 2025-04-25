@@ -8,7 +8,7 @@ const ItemModal = ({ item, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
-      <div className="bg-white w-fit max-w-2xl shadow-2xl border-gray-300 relative">
+      <div className="bg-white w-fit max-w-2xl relative">
         {/* barra arco-íris com botão de fechar dentro */}
         <div className="absolute top-0 left-0 flex items-center justify-between w-full h-6 bg-gradient-to-r from-[#005691] via-[#64A70B] to-[#E30613] px-4">
           <span className="text-white font-bold">{item.title}</span>

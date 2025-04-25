@@ -2,14 +2,17 @@ import React from 'react';
 
 export default function CondutaItem({ section, isOpen, onClick }) {
   return (
-    <div className="border-b border-gray-300">
+    <div className="mb-2 border border-gray-300 overflow-hidden">
       <button
         onClick={onClick}
-        className="w-full flex justify-between items-center py-4 px-4 font-medium text-base text-left hover:bg-gray-100 transition"
+        className="w-full flex justify-between items-center px-4 py-4 bg-gray-200 hover:bg-gray-300 transition-colors font-medium text-left"
       >
-        <span>{section.title}</span>
+        {/* título com tamanho aumentado */}
+        <span className="text-lg sm:text-xl font-semibold">{section.title}</span>
+
+        {/* ícone de seta rotaciona quando abre */}
         <svg
-          className={`w-5 h-5 transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-5 h-5 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
@@ -20,24 +23,26 @@ export default function CondutaItem({ section, isOpen, onClick }) {
       </button>
 
       <div
-        className={`transition-all duration-300 ease-in-out overflow-hidden ${
-          isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+        className={`w-full bg-white transition-all duration-300 ease-in-out overflow-hidden ${
+          isOpen ? 'max-h-[1000px] py-4' : 'max-h-0 py-0'
         }`}
       >
-        <ul className="px-4 pb-4 text-gray-700 space-y-1 list-disc list-inside">
-          {section.items.map((item, idx) => {
-            // Detecta títulos com **
-            if (typeof item === 'string' && item.startsWith('**') && item.endsWith('**')) {
-              return (
-                <li key={idx} className="list-none font-semibold mt-2 mb-1 text-gray-800">
+        <div className="px-4 text-base sm:text-lg text-gray-700">
+          <ul className="space-y-1 list-disc list-inside">
+            {section.items.map((item, idx) =>
+              item.startsWith('**') && item.endsWith('**') ? (
+                <li
+                  key={idx}
+                  className="list-none font-semibold mt-3 mb-1 text-gray-800"
+                >
                   {item.replace(/\*\*/g, '')}
                 </li>
-              );
-            }
-
-            return <li key={idx}>{item}</li>;
-          })}
-        </ul>
+              ) : (
+                <li key={idx}>{item}</li>
+              )
+            )}
+          </ul>
+        </div>
       </div>
     </div>
   );

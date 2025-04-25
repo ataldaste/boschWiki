@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CondutaItem from '../CondutaItem/CondutaItem';
 
 export default function CondutaAccordion() {
-  const [openIndex, setOpenIndex] = useState(0); // define como -1 se quiser todos fechados inicialmente
+  const [openIndex, setOpenIndex] = useState(0); 
 
   const condutaSections = [
     {
@@ -86,8 +86,8 @@ export default function CondutaAccordion() {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto p-4 bg-white rounded shadow">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4">Conduta do Aprendiz</h2>
+    <div className="w-full mx-auto p-4">
+      <h2 className="text-3xl font-bold text-blue-600 mb-4">Conduta do Aprendiz</h2>
       {condutaSections.map((section, i) => (
         <CondutaItem
           key={section.id}

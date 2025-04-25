@@ -86,7 +86,7 @@ const ImportantSection = () => {
           <button
             key={index}
             onClick={() => setSelected(item)}
-            className="w-36 h-36 flex flex-col items-center justify-center p-4 border shadow hover:shadow-lg bg-white"
+            className="w-36 h-36 flex flex-col items-center justify-center p-4 bg-white"
           >
             <img src={item.icon} alt={item.title} className="w-10 h-10 mb-2" />
             <span className="text-base font-medium text-center">{item.title}</span>

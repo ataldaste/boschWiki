@@ -8,6 +8,8 @@ import ImportantSection from "../ImportantSection/ImportantSection.jsx";
 import AvisosSection from "../AvisosSection/AvisosSection.jsx";
 import AreaColors from "../AreaColors/AreaColors.jsx";
 import CondutaAccordion from "../CondutaAccordion/CondutaAccordion.jsx";
+import ResponsabilidadesSection from "../ResponsibilitySection/Responsibility.jsx";
+import SeparacaoLixo from "../TrashSection/TrashSection.jsx";
 
 const Student = () => {
   return (
@@ -31,9 +33,16 @@ const Student = () => {
       <div className="h-15"></div>
       <AreaColors />
 
+      <div className="h-15"></div>
       <div className="bg-light">
       <CondutaAccordion />
       </div>
+      
+      <div className="h-15"></div>
+      <ResponsabilidadesSection/>
+
+      <div className="h-15"></div>
+      <SeparacaoLixo/>
 
       <div className="h-15"></div>
       <ImportantSection/>

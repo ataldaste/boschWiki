@@ -36,7 +36,7 @@ const RecognitionSection = () => {
           <div key={index}>
             <RecognitionCard {...item} />
             {index < recognitions.length - 1 && (
-              <div className="my-12 border-t border-gray-300 w-10/12 mx-auto" />
+              <div className="my-12 w-10/12 mx-auto" />
             )}
           </div>
         ))}
